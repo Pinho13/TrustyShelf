@@ -4,6 +4,8 @@ JunctionX Lisbon 2026, Sensei challenge "Fresh eyes on fresh produce".
 
 Ceiling cameras already watch the fruit and vegetable gondolas. For every image, TrustyShelf checks each planogram area and answers two questions: **is the right product there**, and **is it empty, half or full**. Staff get a prioritised list of what to restock or fix instead of walking the aisles to find out.
 
+![TrustyShelf dashboard: store overview, a camera with its colour-coded areas and the restock tasks](docs/media/dashboard-tour.gif)
+
 - [Quick start](#quick-start)
 - [Run it on a new dataset](#run-it-on-a-new-dataset)
 - [See the results](#see-the-results)
@@ -82,6 +84,33 @@ cd dashboard && npm install && npm run dev   # terminal 2, http://localhost:5173
 ```
 
 It always shows the latest run: store overview, per-camera view with colour-coded areas, the restock task list, and each shelf through the day. Re-run the pipeline and refresh the page.
+
+<table>
+  <tr>
+    <td><img src="docs/media/overview.jpg" alt="Store overview with all cameras and the task list"></td>
+    <td><img src="docs/media/camera.jpg" alt="One camera with its areas coloured by status"></td>
+  </tr>
+  <tr>
+    <td align="center">Store overview: every camera and the restock tasks</td>
+    <td align="center">One camera, each area coloured by its status</td>
+  </tr>
+  <tr>
+    <td><img src="docs/media/area-detail.jpg" alt="Detail of one area"></td>
+    <td><img src="docs/media/schema.jpg" alt="Schema view of the planogram areas"></td>
+  </tr>
+  <tr>
+    <td align="center">One area: stock level and its history today</td>
+    <td align="center">Schema view of the planogram</td>
+  </tr>
+</table>
+
+**Each shelf through the day.** Step through the captures of one camera and watch the stock run down.
+
+![Stepping through one camera's captures from 06:12 to 20:16](docs/media/shelf-through-the-day.gif)
+
+**Schema view and dark mode.**
+
+![Switching to dark mode, the schema view and the per-product view](docs/media/schema-and-dark-mode.gif)
 
 **Score against labels** (only for images we have labels for):
 
